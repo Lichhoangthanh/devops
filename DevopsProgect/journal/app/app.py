@@ -3,7 +3,7 @@ from sqlalchemy import MetaData
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 import os
-#lichtesttt
+#lichtesttt brand
 app = Flask(__name__)
 application = app
 
