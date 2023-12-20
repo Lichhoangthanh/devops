@@ -3,8 +3,8 @@
 {% block content %}
 
 <div class="row p-4 mx-5">
-    <h2 class="col-10">Список студентов</h2>
-    <a class="btn btn-primary col-2" href="{{ url_for('createstudent') }}">Добавить Студента</a>
+    <h2 class="col-10">Booklist</h2>
+    <a class="btn btn-primary col-2" href="{{ url_for('createstudent') }}">Add book</a>
 </div>
 
 <div class="container">
@@ -15,25 +15,25 @@
                     №
                 </th>
                 <th>
-                    Фамилия
+                    Name
                 </th>
                 <th>
-                    Имя
+                    Publisher
                 </th>
                 <th>
-                    Отчество
+                    Author
                 </th>
                 <th>
-                    Год поступления
+                    Year
                 </th>
                 <th>
-                    Форма обучения
+                    Infor
                 </th>
                 <th>
-                    Группа
+                    Bookcode
                 </th>
                 <th>
-                    Действие
+                    More
                 </th>
             </tr>        
         </thead>
