@@ -1,0 +1,39 @@
+version: "3.8"
+services:
+  web:
+    image: lichhoang1204/devops_app:latest  # Thay đổi tên image và tag tương ứng
+    links:
+      - "postgres_db:adminer"
+    container_name: DevOps_app
+    restart: always
+    ports:
+      - 5000:5000
+    environment:
+      - DEBUG=0 
+    depends_on:
+      - postgres_db
+      - adminer
+    env_file:
+      - ./app/.env
+    volumes:
+      - ./app:/code
+  
+  adminer:
+    image: lichhoang1204/adminer:latest  # Thay đổi tên image và tag tương ứng
+    container_name: adminer_psql
+    restart: always
+    ports:
+      - 8080:8080     
+
+  postgres_db:
+    image: lichhoang1204/postgres:latest  # Thay đổi tên image và tag tương ứng
+    container_name: PostgresCont
+    ports:
+      - 5432:5432
+    restart: "unless-stopped"
+    volumes:
+      - postgres_db:/var/lib/postgresql/data
+
+volumes:
+  postgres_db:
+    driver: local
