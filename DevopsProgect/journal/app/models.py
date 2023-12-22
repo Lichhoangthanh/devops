@@ -6,12 +6,12 @@ class Student(db.Model):
     __tablename__ = 'students'
 
     id = db.Column(db.Integer, primary_key=True)
-    lastname = db.Column(db.String(100), nullable=False)
-    name = db.Column(db.String(100), nullable=False)
-    surname = db.Column(db.String(100), nullable=False)
-    admission_year = db.Column(db.Integer, nullable=False)
-    education_form = db.Column(db.String(100), nullable=False)
-    group = db.Column(db.String(100), nullable=False)
+    # lastname = db.Column(db.String(100), nullable=False)
+    # name = db.Column(db.String(100), nullable=False)
+    # surname = db.Column(db.String(100), nullable=False)
+    # admission_year = db.Column(db.Integer, nullable=False)
+    # education_form = db.Column(db.String(100), nullable=False)
+    # group = db.Column(db.String(100), nullable=False)
 
     def __repr__(self):
         return '<Student %r>' % self.lastname
