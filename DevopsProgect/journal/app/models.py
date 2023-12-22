@@ -1,6 +1,6 @@
 import os
 import sqlalchemy as sa
-from app.app import db
+from app import db
 
 class Student(db.Model):
     __tablename__ = 'students'

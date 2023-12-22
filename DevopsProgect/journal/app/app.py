@@ -34,7 +34,7 @@ metadata = MetaData(naming_convention=convention)
 db = SQLAlchemy(app, metadata=metadata)
 migrate = Migrate(app, db)
 
-from app.models import Student, PlanOfStudy, Gradebook
+from models import Student, PlanOfStudy, Gradebook
     
 
 @app.route('/')
