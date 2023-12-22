@@ -3,8 +3,8 @@ import os
 import pytest
 # tests/test_student.py
 from flask import Flask
-from app.app import db
-from app.models import Student
+from app import db
+from models import Student
 
 os.environ['FLASK_ENV'] = 'testing'
 os.environ['FLASK_APP'] = 'your_app'
