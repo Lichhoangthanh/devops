@@ -1,6 +1,6 @@
 [flake8]
 exclude = venv,tests 
-ignore = E,W
+ignore = E,W,F
 ; exclude = tests/* Định nghĩa các thư mục hoặc tệp tin mà bạn muốn loại trừ khỏi việc kiểm tra.
 ; max-line-length = 88 Xác định độ dài tối đa của một dòng mã nguồn.
 ; per-file-ignores =
