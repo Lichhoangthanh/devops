@@ -1,3 +1,12 @@
 [flake8]
 exclude = venv,tests 
-ignore = E,W,F
+ignore = E,W
+; exclude = tests/* Định nghĩa các thư mục hoặc tệp tin mà bạn muốn loại trừ khỏi việc kiểm tra.
+; max-line-length = 88 Xác định độ dài tối đa của một dòng mã nguồn.
+; per-file-ignores =
+;     app/models/__init__.py:F401
+;     tests/*:E501                     Cho phép bạn chỉ định các quy tắc bỏ qua cụ thể cho từng tệp tin.
+; extend-ignore = E203, W503 Mở rộng danh sách mã lỗi bị bỏ qua.
+; max-complexity = 10 Xác định độ phức tạp tối đa cho mỗi hàm hoặc phương thức.
+; select = E,F,W,B,B9 Chọn danh sách các mã lỗi bạn muốn kiểm tra. Nếu được chỉ định, chỉ những mã lỗi này sẽ được kiểm tra.
+; max-doc-length = 72 Đặt giới hạn độ dài tối đa cho chuỗi tài liệu.
