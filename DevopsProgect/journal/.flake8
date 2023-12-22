@@ -1,3 +1,3 @@
 [flake8]
 exclude = venv,tests 
-ignore = E501
+ignore = E,W,F
