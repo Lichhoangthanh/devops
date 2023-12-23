@@ -2,17 +2,17 @@
 
 {% block content %}
 
-<h2 class="p-4 mx-5">Счетчик студентов</h2>
+<h2 class="p-4 mx-5">Book list</h2>
 
 <div class="container">
     <form method="post" action="/schetchik">
-        <p>Выберите форму обучеия</p>
+        <p>Choose your book genre</p>
         <select name="select_form">
-            <option name="дневная">дневная</option>
-            <option name="вечерняя">вечерняя</option>
-            <option name="заочная">заочная</option>
+            <option name="дневная">Action</option>
+            <option name="вечерняя">Fiction</option>
+            <option name="заочная">Comodie</option>
         </select>
-        <button type="submit">Отправить</button>
+        <button type="submit">Send</button>
     </form>
     {% if student_count %}
         <p>Количество студентов "{{ form_of_educ }}" формы: {{ student_count }}</p>
